@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Olamide Olatunbosun | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h2 {
+            font-weight: 600;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(15, 32, 39, 0.8); /* Transparent dark navy */
+            backdrop-filter: blur(6px);
+        }
+
+        .navbar .navbar-brand {
+            font-weight: bold;
+            color: #0dcaf0 !important; /* Bootstrap cyan */
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-link:hover {
+            color: #0dcaf0 !important;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero img {
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        #typed-text {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #0dcaf0;
+        }
+
+        .btn-custom {
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            border-radius: 20px;
+        }
+
+        /* Floating Buttons */
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            font-size: 22px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .floating-btn.whatsapp {
+            background-color: #25d366;
+            right: 80px;
+        }
+
+        .floating-btn.call {
+            background-color: #0d6efd;
+            right: 20px;
+        }
+
+        /* Portfolio */
+        #portfolio .card img {
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        #portfolio .card img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer i {
+            transition: transform 0.3s;
+            font-size: 1.5rem; /* smaller icons */
+        }
+
+        footer i:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating buttons -->
+    <a href="https://wa.me/447442831958" class="floating-btn whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+447349393176" class="floating-btn call">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand bg-dark fixed-top">
+        <div class="container">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <div>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+                <a class="navbar-brand ms-auto" href="#">OO</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="profile-placeholder.jpg" alt="Olamide Olatunbosun" class="rounded-circle" width="150">
+        <div id="typed-text"></div>
+        <a href="#contact" class="btn btn-primary btn-custom">Hire Me</a>
+        <a href="Olamide_Olatunbosun_CV.pdf" target="_blank" class="btn btn-outline-light btn-custom">View CV</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a motivated and reliable student with a passion for learning and problem-solving. I thrive in fast-paced environments...</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3">
+                        <h5>Time Management</h5>
+                        <p>Efficiently work under pressure and meet deadlines.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3">
+                        <h5>Problem-Solving</h5>
+                        <p>Strong analytical thinking, coding, and project skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h5>Doncaster College, UK (2024 – 2026)</h5>
+                    <p>Digital T-Level (Cyber Security) – Predicted Distinction</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <img src="portfolio1.jpg" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <p class="card-text">Description of the work/project done.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-custom">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <a href="https://www.instagram.com/kgold.08" target="_blank" class="text-white me-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@k.gold011" target="_blank" class="text-white me-3">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.snapchat.com/add/k.gold011" target="_blank" class="text-white me-3">
+                <i class="fab fa-snapchat"></i>
+            </a>
+        </div>
+        <p class="mt-2 mb-0">&copy; 2025 Olamide Olatunbosun. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed-text', {
+            strings: ["Hi 👋 I am Olamide Olatunbosun,"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            showCursor: true,
+            cursorChar: '|'
+        });
+    </script>
+
+    <!-- Contact form JS -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if(name === "" || email === "" || message === ""){
+                alert("Please fill all fields!");
+                return;
+            }
+            alert("Thank you, " + name + "! Your message has been sent.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
