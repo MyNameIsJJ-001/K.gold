@@ -1,0 +1,10 @@
+<!-- save as favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <text x="50%" y="50%" text-anchor="middle" dy=".35em"
+        font-family="Courier Prime, monospace"
+        font-size="36"
+        font-weight="700"
+        fill="#0ea5e9">
+    OO<tspan fill="#0369a1">.</tspan>
+  </text>
+</svg>

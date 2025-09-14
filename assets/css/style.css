@@ -1,0 +1,219 @@
+/* ============================
+   GLOBAL THEME
+   ============================ */
+:root {
+  --sky-blue: #87CEFA;
+  --ocean-blue: #1E3A8A;
+  --light-gray: #f3f6fa;
+  --dark-text: #1a1a1a;
+  --soft-white: #ffffff;
+}
+
+body {
+  background: var(--light-gray);
+  color: var(--dark-text);
+  font-family: 'Courier Prime', monospace;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  padding-top: calc(72px + 28px); /* ~navbar height + gap */
+}
+
+/* ============================
+   PRELOADER
+   ============================ */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #0b1a33;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.preloader .logo {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+.preloader .oo {
+  color: var(--sky-blue);
+  animation: pulse 1.2s infinite alternate;
+}
+.preloader .dot {
+  color: #0ea5e9;
+  font-size: 2.5rem;
+  margin-left: 4px;
+  animation: bounce 1s infinite;
+}
+@keyframes pulse {
+  from { opacity: 0.4; transform: scale(0.9); }
+  to   { opacity: 1;   transform: scale(1.1); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ============================
+   FLOATING CTA BUTTONS
+   ============================ */
+.floating-ctas a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+}
+.floating-ctas #whatsapp-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+}
+.floating-ctas #whatsapp-btn:hover {
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 5px 14px rgba(37,211,102,0.35);
+}
+.floating-ctas #call-btn {
+  background: linear-gradient(135deg, var(--ocean-blue), #0ea5e9);
+  color: #fff;
+}
+.floating-ctas #call-btn:hover {
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 5px 14px rgba(14,165,233,0.35);
+}
+.floating-ctas #mail-btn {
+  background: #f1f5f9;
+  color: var(--ocean-blue);
+}
+.floating-ctas #mail-btn:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 5px 14px rgba(30,58,138,0.25);
+}
+
+/* ============================
+   NAVBAR + PROGRESS BAR
+   ============================ */
+.custom-navbar {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  z-index: 1500;
+  border-radius: 16px;
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(11, 26, 51, 0.9);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.45);
+  border: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+.custom-navbar .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+}
+.custom-navbar .progress-wrap {
+  width: 100%;
+  padding: 0 14px 8px;
+  min-height: 6px;
+  box-sizing: border-box;
+}
+#nav-progress {
+  height: 6px;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--sky-blue), #0ea5e9, var(--ocean-blue));
+  box-shadow: 0 4px 12px rgba(14,165,233,0.12);
+  transition: width 80ms linear;
+}
+
+/* ============================
+   TYPED.JS TEXT
+   ============================ */
+#greeting {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+#subtyped {
+  display: block;
+  min-height: 1.5em;
+  line-height: 1.6;
+}
+.typed-cursor {
+  display: inline-block;
+  margin-left: 2px; /* tighter cursor */
+  font-weight: 700;
+  opacity: 1;
+  animation: typed-blink 0.9s steps(2, start) infinite;
+}
+@keyframes typed-blink {
+  50% { opacity: 0; }
+}
+
+
+
+/* ============================
+   TYPED.JS FIXES
+   ============================ */
+#greeting {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+#subtyped {
+  display: block;
+  min-height: 2.4em;       /* space for 2 lines */
+  line-height: 1.6;
+  white-space: normal !important; 
+  overflow: visible !important;
+}
+
+
+.typed-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  font-weight: 700;
+  opacity: 1;
+  animation: typed-blink 0.9s steps(2, start) infinite;
+}
+
+@keyframes typed-blink {
+  50% { opacity: 0; }
+}
+
+/* Skill Progress Bar */
+.progress-slim {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef; /* light grey background */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-inner {
+  height: 100%;
+  width: 0; /* start empty */
+  background: #0d6efd; /* bootstrap blue, change if you like */
+  border-radius: 4px;
+  transition: width 1.5s ease-in-out;
+}
