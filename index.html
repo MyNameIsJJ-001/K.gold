@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- This title stuff is the text displays on ur browser's tab -->
   <title>Olamide Olatunbosun | K.gold</title>
   <meta name="description" content="Portfolio of Olamide Olatunbosun — Web Development & Cyber Security student. View CV, portfolio and contact." />
 
-
+<!-- This is an external link for fonts like incase the browser doesn't have the font u need u this goes to the site and imports the font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
 
   <!-- ============================
-       Fonts & Icons
-       EDIT: change font here if you prefer another family
+       Fonts & Icons instead of drawing icons urself u just import them from a website
   ============================ -->
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,27 +28,25 @@
 
   <!-- ============================
        Bootstrap CSS (CDN)
-       NOTE: works well with GitHub Pages
+       NOTE: this one is better with github i used github for hosting and domain
   ============================ -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Your custom styles -->
+  <!-- Your local css for customizations -->
 <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Favicon -->
+  <!-- Favicon this is that image that appears in ur browser's tab -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- Typed.js (for the typing effect) -->
+  <!-- Typed.js (for the typing effect) this handles some javascript -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
-  <!-- EDIT: meta/social tags if you want custom OG/Twitter cards -->
 </head>
 <body>
 
   <!-- ============================
-       PRELOADER
-       EDIT: change or remove. This hides after load.
+       PRELOADER this is that 00. stuff u see when ur website is launched.
   ============================ -->
   <div id="preloader" class="preloader d-flex align-items-center justify-content-center">
     <div class="logo">
@@ -78,7 +77,7 @@
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item">
-            <a class="nav-link btn btn-sm btn-outline-light ms-2" href="#cv-modal" data-bs-toggle="modal">View CV</a>
+            <a class="nav-link btn text-info btn-sm btn-outline-light ms-2" href="#cv-modal" data-bs-toggle="modal">View CV</a>
           </li>
         </ul>
       </div>
@@ -130,7 +129,7 @@
 
         <!-- CTA Group (inside same column, below texts) -->
         <div class="cta-group d-inline-flex gap-2">
-          <a href="#cv-modal" class="btn btn-primary btn-sm btn-pill" data-bs-toggle="modal">View CV</a>
+          <a href="#cv-modal" class="btn btn-success btn-sm btn-pill" data-bs-toggle="modal">View CV</a>
           <a href="assets/docs/Olamide_CV.pdf" class="btn btn-outline-secondary btn-sm btn-pill" download>Download CV</a>
           <a href="#contact" class="btn btn-outline-primary btn-sm btn-pill">Contact</a>
         </div>
