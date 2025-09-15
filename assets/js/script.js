@@ -55,13 +55,14 @@ window.addEventListener('load', () => {
     // Greeting
     new Typed('#greeting', {
       strings: ["Hi 👋 I am Olamide Olatunbosun,"],
-      typeSpeed: 55,
-      showCursor: true,
-      cursorChar: '|',
-      onComplete: () => {
-        setTimeout(startSubtyped, 400);
-      }
-    });
+  typeSpeed: 50,
+  showCursor: true,
+  cursorChar: '|',
+  onComplete: (self) => {
+    if (self && self.cursor) self.cursor.style.display = 'none'; // hide cursor
+    setTimeout(startSubtyped, 400);
+  }
+});
   }
 
 function startSubtyped(){
@@ -69,7 +70,7 @@ function startSubtyped(){
     strings: [
       "Student — Cyber Security and Web Development. Motivated, reliable, always eager to learn and solve problems."
     ],
-    typeSpeed: 30,
+    typeSpeed: 20,
     showCursor: true,
     cursorChar: '|',
     onComplete: (self) => {
@@ -84,8 +85,6 @@ function startSubtyped(){
     setTimeout(startTypedSequence, 1600); // wait for preloader to finish
   });
 })();
-
-
 
 
 
